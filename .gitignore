@@ -1,0 +1,14 @@
+# secrets — keys are read from the environment only, never committed
+.env
+.env.*
+*.key
+
+# builds
+/mewcode-go
+/mewcode-go.exe
+*.exe
+/vendor/
+
+# os
+Thumbs.db
+Desktop.ini
