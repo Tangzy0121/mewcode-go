@@ -15,6 +15,7 @@ The code is implemented by AI; the architecture decisions and the review are min
 ## Map
 
 - `GLOSSARY.md` — project vocabulary (Chinese)
+- `docs/roadmap.md` — chapter-by-chapter plan and milestones
 - `docs/adr/` — decisions worth remembering
 - `docs/review/<chapter>.md` — audit evidence per chapter
 - `docs/notes/<chapter>.md` — my own study notes (never course material)
