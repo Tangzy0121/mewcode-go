@@ -6,9 +6,26 @@
 
 每 4 天约 2h（≈3.5h/周），一章 = 一次会话。17 章 ≈ 17 次会话 ≈ 68 天 ≈ **2.3 个月**，因此 v1.0 的现实落地时间约为 **2027 年 1 月上旬**；v1.1（web 面）另计。ch7、ch13–15 这几章可能一章不止一次会话，所以进度看里程碑，不看单章。
 
-## 规格
+## 规格与工单
 
-- **M1（ch1–4）**：GitHub issue [#1](https://github.com/Tangzy0121/mewcode-go/issues/1)（标签 `ready-for-agent`）。M2/M3 的规格在各自开始前再写，不提前猜。
+- **M1（ch1–4）规格**：GitHub issue [#1](https://github.com/Tangzy0121/mewcode-go/issues/1)（标签 `ready-for-agent`）。M2/M3 的规格在各自开始前再写，不提前猜。
+- **M1 工单**（纯线性链，前沿永远只有一张）：
+
+| 工单 | issue | 交付 | 阻塞于 |
+| --- | --- | --- | --- |
+| T1 | [#2](https://github.com/Tangzy0121/mewcode-go/issues/2) | 配置与故障路径（不含模型调用） | 无 |
+| T2 | [#3](https://github.com/Tangzy0121/mewcode-go/issues/3) | 第一次真实往返（非流式）+ 错误分类与退避 | #2 |
+| T3 | [#4](https://github.com/Tangzy0121/mewcode-go/issues/4) | 流式：SSE → Stream Event → 逐字输出 | #3 |
+| T4 | [#5](https://github.com/Tangzy0121/mewcode-go/issues/5) | 统一消息模型 + REPL 多轮 Session | #4 |
+| T5 | [#6](https://github.com/Tangzy0121/mewcode-go/issues/6) | 工具接口 + 注册表 + read + 首次 Tool Call 闭环 | #5 |
+| T6 | [#7](https://github.com/Tangzy0121/mewcode-go/issues/7) | glob + grep | #6 |
+| T7 | [#8](https://github.com/Tangzy0121/mewcode-go/issues/8) | Agent Loop 健壮性 | #7 |
+| T8 | [#9](https://github.com/Tangzy0121/mewcode-go/issues/9) | write + edit + 薄版 Permission Mode | #8 |
+| T9 | [#10](https://github.com/Tangzy0121/mewcode-go/issues/10) | bash（PowerShell）+ 拒绝路径 | #9 |
+| T10 | [#11](https://github.com/Tangzy0121/mewcode-go/issues/11) | M1 证据与演示收尾 | #10 |
+| T11 | [#12](https://github.com/Tangzy0121/mewcode-go/issues/12) | 求职产物 | #11 |
+
+工单不绑死章节：章节是学习顺序，工单是能力竖切。读章后若与工单冲突，改工单而不是硬套。
 
 ## 里程碑
 
